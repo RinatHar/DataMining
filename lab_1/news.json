@@ -1,0 +1,266 @@
+{
+    "status": "ok",
+    "totalResults": 36,
+    "articles": [
+        {
+            "source": {
+                "id": "lenta",
+                "name": "Lenta"
+            },
+            "author": "Кирилл Луцюк",
+            "title": "Жители США стали меньше тратить на еду из-за роста цен",
+            "description": "Цены на продукты питания в США будут расти еще как минимум год. Об этом предупредило Bloomberg",
+            "url": "https://lenta.ru/news/2026/09/04/zhiteli-ssha-stali-menshe-tratit-na-edu-iz-za-rosta-tsen/#articleBody_news-2026-09-04-zhiteli-ssha-stali-menshe-tratit-na-edu-iz-za-rosta-tsen",
+            "urlToImage": "https://icdn.lenta.ru/images/2026/09/04/14/20260904142740302/share_06d3e48061541fcfe5feb84aee57cdeb.jpg",
+            "publishedAt": "2026-09-04T11:40:00Z",
+            "content": ". Bloomberg.\r\n , 3 2026 2,4 2027 . , . , 9,8 , 5,9 .\r\n . 2020 30 .\r\n , (CTM), .\r\n II 2026 . , , 3,4 ."
+        },
+        {
+            "source": {
+                "id": "lenta",
+                "name": "Lenta"
+            },
+            "author": "Артём Верейкин",
+            "title": "На Украине встревожились из-за ситуации с продуктами",
+            "description": "Цены на продукты на Украине вырастут не менее чем на 20-30 процентов. Об этом предупредил украинский финансовый аналитик Виктор Гальчинский в эфире канала «Новости Live»",
+            "url": "https://lenta.ru/news/2026/08/31/na-ukraine-vstrevozhilis-iz-za-situatsii-s-produktami/#articleBody_news-2026-08-31-na-ukraine-vstrevozhilis-iz-za-situatsii-s-produktami",
+            "urlToImage": "https://icdn.lenta.ru/images/2026/08/31/22/20260831221344331/share_6edf5653a77802b3ad16ee9554e5417b.jpg",
+            "publishedAt": "2026-08-31T19:14:14Z",
+            "content": ": IMAGO / Global Look Press"
+        },
+        {
+            "source": {
+                "id": "lenta",
+                "name": "Lenta"
+            },
+            "author": "Елизавета Гринберг",
+            "title": "Россиянка описала цены на продукты в Крыму и Италии словами «почти одинаковые»",
+            "description": "Российская тревел-блогерша описала цены на продукты в Крыму и Италии словами «почти одинаковые». Об этом она рассказала в личном блоге «Тут вам не там» на платформе «Дзен»",
+            "url": "https://lenta.ru/news/2026/08/13/rossiyanka-opisala-tseny-na-produkty-v-krymu-i-italii-slovami-pochti-odinakovye/",
+            "urlToImage": "https://icdn.lenta.ru/images/2026/08/12/16/20260812162703096/share_ac84bdc66ac467ceaceef587f174876d.jpg",
+            "publishedAt": "2026-08-13T04:31:31Z",
+            "content": "- « ». « » «».\r\n«, , - . , , », . , , . «, - 500 , , », .\r\n . , , 500 extra virgin - 500 . 19 (1,8 ). , , . « 700 . 500 100 . , », . 1,9 (181 ), .\r\n - « ». , ."
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Servernews.ru"
+            },
+            "author": null,
+            "title": "Pine64 прекратила выпуск Linux-устройств из-за дефицита чипов памяти",
+            "description": "Компания Pine64, разрабатывающая одноплатные компьютеры с поддержкой Linux и другие продукты, сообщила о приостановке выпуска устройств. Причина — дефицит комплектующих, прежде всего чипов оперативной и флеш-памяти. Цены на эти компоненты продолжают расти, чт…",
+            "url": "https://servernews.ru/1147132",
+            "urlToImage": "https://cdn.3dnews.ru/assets/external/illustrations/2026/08/20/1147132/pine.jpg",
+            "publishedAt": "2026-08-20T10:08:00Z",
+            "content": "Pine64, Linux , . — , -. , .\r\nPine64 , - DRAM eMMC Linux . , 2027 . .\r\n« , Linux- , PineStore - MCU — », — Pine64. , Pine64 Linux . , PineTime, PinePower .\r\n : Pine64\r\n. , Raspberry Pi: $150. , NVIDI… [+20 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Kommersant.ru"
+            },
+            "author": "Яна Рождественская",
+            "title": "ООН: мировые цены на продукты достигли максимума с 2022 года",
+            "description": "В августе мировой индекс цен на продукты питания вырос на 2,5% год к году и на 1,9% в сравнении с июле, достигнув 133,3 пунктов — это рекордное значение с ноября 2022 года. Такие данные опубликовала Продовольственная и сельскохозяйственная организация ООН (FA…",
+            "url": "https://www.kommersant.ru/doc/8936506#article-text-8936506",
+            "urlToImage": "https://iv.kommersant.ru/SocialPics/8936506_49_0_1778644931",
+            "publishedAt": "2026-09-04T10:28:41Z",
+            "content": "2,5% 1,9% , 133,3 2022 . (FAO).\r\nFAO . , -, . , .\r\n , 15% , 2025 , 2,6% , . FAO « », . 11,9%.\r\n Bloomberg , 2012 13%."
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Life.ru"
+            },
+            "author": "https://www.facebook.com/lifenews.ru/",
+            "title": "Климат, энергия, логистика: Почему мировые цены на продукты снова растут",
+            "description": "Мировые цены на продовольствие в августе поднялись до максимального уровня с конца 2022 года, однако пока остаются значительно ниже исторического пика. По данным Продовольственной и сельскохозяйственной организации ООН (FAO), соответствующий индекс достиг 133…",
+            "url": "https://life.ru/p/klimat-energiya-logistika-pochemu-mirovye-tseny-na-produkty-snova-rastut",
+            "urlToImage": "https://static.life.ru/ip/unsafe/rs:fit:1200:/q:98/sh:0.5/czM6Ly9saWZlLXN0YXRpYy9wdWJsaWNhdGlvbnMvMjAyNi85LzgvNjA2NDA4NTgxMzguMjkzOTQucG5n.webp",
+            "publishedAt": "2026-09-08T13:22:24Z",
+            "content": "2022 , . (FAO), 133,3 , 1,9%.\r\n , . , , , .\r\n . - , . .\r\nFAO . 11,9%, 2,2%. 16,8% 2022 .\r\n , , . : 140 , 88 .\r\n « » 60 . , .\r\n , , . , 5%, 3,7%, 3,1%, 2,3%. 2,1%."
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Kommersant.ru"
+            },
+            "author": "Евгений Хвостик",
+            "title": "Bloomberg: цены на сельхозпродукцию показали рекордный рост с 2012 года",
+            "description": "Рост цен на основные сельскохозяйственные продукты в августе составил более 13%, следует из индекса Bloomberg Agriculture Spot Index. Как отмечает агентство, рост цен приблизился к рекордному показателю в 14%, который был зафиксирован в июле 2012 года.",
+            "url": "https://www.kommersant.ru/doc/8922125#article-text-8922125",
+            "urlToImage": "https://im2.kommersant.ru/SocialPics/8922125_49_0_380348669",
+            "publishedAt": "2026-08-31T08:30:10Z",
+            "content": "2026 0,6% 1% , 2023 . , (FAO), , . 5,6% - - , 2022 - .\r\n 28 2026 7,67 , 23 2023 , 19%. Bloomberg , , . 25% , , , 90% - ."
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Overclockers.ru"
+            },
+            "author": "Nacvark",
+            "title": "NVIDIA повышает цены на 15% на все свои продукты в области ИИ",
+            "description": "Это затронет всю цепочку поставок, включая ИИ-стартапы",
+            "url": "https://overclockers.ru/blog/Nacvark/show/262360/NVIDIA-povyshaet-ceny-na-15-na-vse-svoi-produkty-v-oblasti-II",
+            "urlToImage": "https://overclockers.ru/st/r/1200/-/legacy/blog/397747/747638_O.png",
+            "publishedAt": "2026-08-23T00:27:41Z",
+            "content": "NVIDIA , () 15%. -, . : Reuters \r\n URL , , . Bloomberg, , 2027 . , Vera Rubin Grace Blackwell, NVIDIA.\r\n , . , -, Microsoft, Google Oracle. , , .\r\n , NVIDIA -, , -, ."
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Life.ru"
+            },
+            "author": "https://www.facebook.com/lifenews.ru/",
+            "title": "Рис, масло и свинина: Какие продукты больше всего подешевели в России в июле",
+            "description": "Минимальные цены на социально значимые продукты в крупных торговых сетях в июле оказались на 7,2% ниже, чем годом ранее. Такие данные приводит аналитический центр Ассоциации компаний омниканальной розничной торговли (АКОРТ).",
+            "url": "https://life.ru/p/1910667",
+            "urlToImage": "https://static.life.ru/ip/unsafe/rs:fit:1200:/q:98/sh:0.5/czM6Ly9saWZlLXN0YXRpYy9wdWJsaWNhdGlvbnMvMjAyNi84LzExLzExMjYyNTE0MzI0MDAuNjY3NS5wbmc=.webp",
+            "publishedAt": "2026-08-11T15:01:14Z",
+            "content": "7,2% , . ().\r\n 14 25 . 28,7%. 26,6%, 23,5%, 17,6%, 15,2%. , 2025 , , , , , , , , .\r\n 2026 « » 0,6%. 22,6%, 21,5% 17,4%. . 11,7%, 11%, 4,6%. 11,3%.\r\n 0,3%. . , , , , , , , .\r\n . , .\r\n , 2026 , , . . 1… [+30 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Finance.ua"
+            },
+            "author": "Finance.UA",
+            "title": "Цены на продукты: министр рассказал, чего ожидать",
+            "description": "Цены на продукты будут расти по всей Украине, однако пока нет предпосылок для подорожания продовольствия больше, чем в пределах 2,5% из-за перестройки логистики торговыми сетями.",
+            "url": "https://news.finance.ua/ru/ceny-na-produkty-ministr-rasskazal-chego-ozhidat",
+            "urlToImage": "https://finance-news-media.fra1.cdn.digitaloceanspaces.com/prod/9/7/971f88bac3e573c6a6fe5d7409703ca0",
+            "publishedAt": "2026-09-04T05:33:00Z",
+            "content": ": , \r\n« 2,5%   . , 2,5%.   , , ? . , - »,  .\r\n« , , 2030%. .   , ? .   , , ? »,  .\r\n , Ctrl+Enter , ."
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Rg.ru"
+            },
+            "author": "Татьяна Карабут",
+            "title": "С января цены на продукты можно будет проследить от поля до прилавка",
+            "description": "С 1 января 2027 года государство получит новый инструмент контроля за ценами на продукты. Власти с помощью информации Федеральной налоговой службы (ФНС) смогут отслеживать не только стоимость товара на полке, но и ее формирование на разных этапах - от произво…",
+            "url": "https://rg.ru/2026/08/11/razlozhat-po-polkam.html",
+            "urlToImage": "https://cdnstatic.rg.ru/uploads/images/2026/08/11/ria_9205512hr_cdd.jpg",
+            "publishedAt": "2026-08-11T15:53:20Z",
+            "content": ", , , . , , , .\r\n . , , , , . , , .\r\n, . , , - .\r\n . : , , . - .\r\n . , , .\r\n . . : - , , , .\r\n. . 30% .\r\n .\r\n , . , .\r\n , : , , . , , ."
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Finance.ua"
+            },
+            "author": "Finance.UA",
+            "title": "Мировые цены на продукты выросли до максимума с 2022 года",
+            "description": "Мировые цены на продовольствие в августе выросли до самого высокого уровня с конца 2022 года. На рынки влияют геополитическая напряженность и экстремальные погодные условия, которые усиливают беспокойство по поставкам ключевых регионов-производителей.",
+            "url": "https://news.finance.ua/ru/mirovye-ceny-na-produkty-vyrosli-do-maksimuma-s-2022-goda",
+            "urlToImage": "https://finance-news-media.fra1.cdn.digitaloceanspaces.com/prod/6/f/6f519cb58bdffea8f7f97c9690d0d45b",
+            "publishedAt": "2026-09-07T01:44:00Z",
+            "content": "(), , . 11,9%,   2,6%. 15% , .\r\nBloomberg, 10 , 13%. 2012 .\r\n , Ctrl+Enter , ."
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Finance.ua"
+            },
+            "author": "Finance.UA",
+            "title": "В Минагрополитики ответили, возрастут ли цены на продукты в Украине",
+            "description": "Летом 2026 благодаря сезонному фактору падали цены на некоторые продукты питания. Однако возникают опасения по поводу дефицита товаров и роста стоимости вследствие ударов россии по складским помещениям, базам, супермаркетам. Ожидания урожая на текущий год пол…",
+            "url": "https://news.finance.ua/ru/v-minagropolitiki-otvetili-vozrastut-li-ceny-na-produkty-v-ukraine",
+            "urlToImage": "https://finance-news-media.fra1.cdn.digitaloceanspaces.com/prod/4/3/432f4e05b3a8ad9cb14f191ee83424b7",
+            "publishedAt": "2026-08-30T06:17:00Z",
+            "content": ", : magnific\r\n, . 25 . , 6 . 3,5 . . 80 .\r\n , Ctrl+Enter , ."
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Finance.ua"
+            },
+            "author": "Finance.UA",
+            "title": "Какие продукты больше всего подешевели в Украине летом (инфографика)",
+            "description": "Летом 2026 года в Украине подешевел ряд товаров из потребительской корзины. По данным Государственной службы статистики, больше всего за первые два месяца лета упали цены на куриные яйца, овощи и мясо. В то же время Минагрополитики предупреждает о возможном п…",
+            "url": "https://news.finance.ua/ru/kakie-produkty-bol-she-vsego-podesheveli-v-ukraine-letom-infografika",
+            "urlToImage": "https://finance-news-media.fra1.cdn.digitaloceanspaces.com/prod/9/5/95126b5b9afa571795b36a684cbd5553",
+            "publishedAt": "2026-09-07T05:33:00Z",
+            "content": ", www.slovoidilo.ua\r\n, \r\n , (-6%), 43,1%. , (25,4%).\r\n   -5,9%. 18,7%, ( 2025 2026) 7,8%.\r\n   -1,3% -1,1% . , (, , )  -0,8%. -0,6%. , +2,4%.\r\n -\r\n<ul><li> (+31,9%);</li><li> (+29,8%);</li><li> (+6,0%… [+82 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Vz.ru"
+            },
+            "author": "Мария Иванова",
+            "title": "Путин назвал развитие теплиц способом снизить цены на Дальнем Востоке",
+            "description": "Президент России Владимир Путин объяснил разницу в ценах на яблоки и морепродукты на Дальнем Востоке региональными особенностями. Разница в стоимости продуктов питания на Дальнем Востоке и в других регионах России объясняется местными особенностями, передает …",
+            "url": "https://vz.ru/news/2026/9/3/1448477.html#text",
+            "urlToImage": "https://img.vz.ru/upimg/soc/soc_1448477.png",
+            "publishedAt": "2026-09-03T09:21:44Z",
+            "content": "<li> 2026 : 3 , ; 4 , 5 ; 8 . , . , 2026 , - .\r\n</li><li> 2026 : 3- 25- , , . 2026 , - : , 56, 1213, 1920 2627 , . , 2026 « », .\r\n</li><li> 2026 : 11 , 14 , 21 27 . , . , 2026 , , .\r\n</li>"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Olegmakarenko.ru"
+            },
+            "author": "olegmakarenko.ru",
+            "title": "Мивина и продовольственные затруднения на Украине",
+            "description": "Во вражеских СМИ жалуются на опустевшие полки украинских супермаркетов. В очередной раз приходится разводить руками, напоминая о причинах и следствиях. Если вы долбите мирный Вайлдберриз, если вы используете свои «гражданские» логистические центры в военных ц…",
+            "url": "https://olegmakarenko.ru/3524522.html",
+            "urlToImage": "https://l-files.livejournal.net/og_image/12791732/13767?v=1786449641",
+            "publishedAt": "2026-08-11T12:00:39Z",
+            "content": ". , . , «» (), , , « » , .\r\n, , . : , .\r\n, , . , , , , , . , , .\r\n, , , : , «» - , - 0,7 . , , , , , , . , 600 , .\r\n, : , , . , .\r\n, , - : , , - , . , , . , , , . - , , , ."
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Mail.ru"
+            },
+            "author": "Диана Дьякова",
+            "title": "Reuters раскрыл, как фото Трампа с едой создало проблемы республиканцам",
+            "description": "Обещание Трампа снизить цены на продукты, данное в 2024 году, не выполнено, цены выросли, что стало проблемой для республиканцев в преддверии ноябрьских выборов, сообщает Reuters.",
+            "url": "https://news.mail.ru/politics/72006092/",
+            "urlToImage": "https://resizer.mail.ru/p/a014951c-5f4b-500b-9324-c983604ddc93/AQAGMR2xJvr6p7uzk5gX7nMVq_6c8PAyRJpTrSNsHdIhbIKzoRHjDdeLATy12umWBiSmA_WStwq0W-ZxDW2k8GhirdE.jpg",
+            "publishedAt": "2026-08-15T18:56:14Z",
+            "content": ", 15  2024 , -   -  ,    — , , , .    ,       .\r\n, Reuters,   19  26 ,   -,  3,4%. ,   ,    . ( 19,2%),   (8,6%), (14%)   ( 23%).\r\n  Reuters/Ipsos,   −47% (  —  20% ,   67%  — ).      .       .\r\n  , … [+82 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Vz.ru"
+            },
+            "author": "Тимур Шайдуллин",
+            "title": "АКОРТ: Рис, сливочное масло и свинина подешевели в России",
+            "description": "Стоимость ряда социально значимых продовольственных товаров в крупных торговых сетях России в июле заметно снизилась, при этом наибольшее падение продемонстрировали крупы и мясная продукция, отмечают аналитики АКОРТ. Аналитики зафиксировали снижение цен на ба…",
+            "url": "https://vz.ru/news/2026/8/11/1441973.html#text",
+            "urlToImage": "https://img.vz.ru/upimg/soc/soc_1441973.png",
+            "publishedAt": "2026-08-11T12:51:57Z",
+            "content": ". , , . « ».\r\n , «dictamnus» « », . , , . « , , . , . , , », .\r\n, , . , . « , , , , , . . , , », .++\r\n , , , , . : . , , . , , . , .\r\n« . , , , . . , . . », .\r\n , « » : , , . , , , .\r\n , . , . , , . … [+18 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Mail.ru"
+            },
+            "author": "Ильдар Хайретдинов",
+            "title": "Доставка продуктов экономит россиянкам с детьми почти 143 часа в год: данные «Купера» и НАФИ",
+            "description": "Женщины в российских городах-миллионниках ежедневно тратят на бытовые дела на 42 минуты больше мужчин. Для женщин с детьми, регулярно пользующихся доставкой, экономия на покупках составляет 2,7 часа в неделю.Женщины в крупных российских городах посвящают быто…",
+            "url": "https://hi-tech.mail.ru/news/153576-dostavka-ekonomit-150-chasov-v-god-kupera-i-nafi/",
+            "urlToImage": "https://resizer.mail.ru/p/5fc2670d-fe0b-5f4d-bc0c-b5fd97cc57d1/AQAKrDwyckzFTwFfm-RF_Cv2V3WOzswL7N3rYCfUQk_tweFt2rQ1sD76-MHyY85d_aPONH1j4GKtofRXmK42OmF-v5o.jpg",
+            "publishedAt": "2026-08-19T10:54:37Z",
+            "content": "3,1 , — 2,4 . , , 143 . «» , 16 .\r\n76% 65% . - 45% ; 25% 28% . — 76%, — 33%, — 30%. , (29%), (25%).\r\n: , , 10,5 , — 13,3 . , , 2,7 , 143 .\r\n— . 35 85% , 83% , , 81% , 79% . — , — 3,8 .\r\n« . , , . , 3… [+56 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Vz.ru"
+            },
+            "author": "Денис Тельманов",
+            "title": "Орешкин объяснил суть особого правового режима для ИИ на Дальнем Востоке",
+            "description": "Заместитель руководителя администрации президента Максим Орешкин рассказал о внедрении экспериментального правового режима для тестирования нейросетей на Дальнем Востоке. Особый правовой режим, который начнет действовать с начала 2027 года, позволит тестирова…",
+            "url": "https://vz.ru/news/2026/9/4/1448857.html#text",
+            "urlToImage": "https://img.vz.ru/upimg/soc/soc_1448857.png",
+            "publishedAt": "2026-09-04T11:15:16Z",
+            "content": "OpenAI GPT-6 Astra, 100 Stargate , Axios.\r\nAstra , . Daybreak Access, ChatGPT Plus, Pro, Business Enterprise, API.\r\nAstra , OpenAI «» : . - , .\r\n : KiCad, Unity, FreeCAD Blender, W-2. Astra , , , , .… [+87 chars]"
+        }
+    ]
+}
