@@ -1,0 +1,13 @@
+{"ts": "2026-10-31T08:57:13.796484+00:00", "event": "pipeline_started"}
+{"ts": "2026-10-31T08:57:15.590441+00:00", "event": "request", "url": "https://www.scrapethissite.com/pages/simple/", "status": 200, "ms": 1152.4, "bytes": 203361}
+{"ts": "2026-10-31T08:57:15.709726+00:00", "event": "html_collection_finished", "total": 250}
+{"ts": "2026-10-31T08:57:18.315368+00:00", "event": "request", "url": "https://api.restcountries.com/countries/v5?limit=100&offset=0", "status": 200, "ms": 2008.2, "bytes": 592705}
+{"ts": "2026-10-31T08:57:19.828001+00:00", "event": "request", "url": "https://api.restcountries.com/countries/v5?limit=100&offset=100", "status": 200, "ms": 932.9, "bytes": 591862}
+{"ts": "2026-10-31T08:57:20.796581+00:00", "event": "request", "url": "https://api.restcountries.com/countries/v5?limit=100&offset=200", "status": 200, "ms": 366.1, "bytes": 333562}
+{"ts": "2026-10-31T08:57:20.799582+00:00", "event": "api_enrichment_loaded", "total_countries": 254}
+{"ts": "2026-10-31T08:57:20.800582+00:00", "event": "api_index_built", "indexed_names": 452}
+{"ts": "2026-10-31T08:57:20.808190+00:00", "event": "cleaning_finished", "countries": 250, "currencies": 268, "languages": 417, "rejects": 12, "api_matched": 235}
+{"ts": "2026-10-31T08:57:24.741666+00:00", "event": "request", "url": "https://httpbin.org/status/503", "status": 503, "ms": 2181.0, "bytes": 0}
+{"ts": "2026-10-31T08:57:24.742822+00:00", "event": "retry", "url": "https://httpbin.org/status/503", "status": 503, "wait": 1.0}
+{"ts": "2026-10-31T08:57:26.081443+00:00", "event": "request", "url": "https://httpbin.org/status/503", "status": 503, "ms": 223.1, "bytes": 0}
+{"ts": "2026-10-31T08:57:26.081949+00:00", "event": "request_failed_final", "url": "https://httpbin.org/status/503", "status": 503}

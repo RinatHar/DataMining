@@ -1,0 +1,15 @@
+{
+  "run_at": "2026-10-31T08:57:21.535472+00:00",
+  "duration_seconds": 7.74,
+  "requests_total": 4,
+  "status_codes": {
+    "200": 4
+  },
+  "error_share": 0.0,
+  "retries": 0,
+  "latency_median_ms": 1152.4,
+  "latency_p95_ms": 2008.2,
+  "traffic_bytes": 1721490,
+  "records_collected": 935,
+  "records_rejected": 12
+}

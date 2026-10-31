@@ -1,0 +1,24 @@
+html:
+  base_url: "https://www.scrapethissite.com"
+  countries_url: "https://www.scrapethissite.com/pages/simple/"
+  delay_seconds: 0.5
+  user_agent: "StudentDataPipeline/1.0 (educational; contact: student@example.edu)"
+
+api:
+  base_url: "https://api.restcountries.com/countries/v5"
+  all_url: "https://api.restcountries.com/countries/v5"
+  api_key: "_"
+  delay_seconds: 0.5
+  user_agent: "StudentDataPipeline/1.0 (educational; contact: student@example.edu)"
+
+db:
+  path: "db/warehouse.db"
+
+quality:
+  thresholds:
+    name_completeness: 0.98
+    capital_completeness: 0.80
+    population_valid: 0.95
+    area_valid: 0.95
+    duplicate_rate: 0.05
+    api_enrichment_rate: 0.90

@@ -1,0 +1,1 @@
+0 3 * * * cd /path/to/final_project && python -m src.run_pipeline >> logs/cron.log 2>&1
