@@ -1,0 +1,251 @@
+cca3,cca2,name_common,region,subregion,capital,population,area,gdp_usd,date
+ABW,AW,Aruba,Americas,Caribbean,Oranjestad,110625,180.0,3326671314.7742,2022-01-01 00:00:00+00:00
+AFG,AF,Afghanistan,Asia,Southern Asia,Kabul,43844000,652230.0,14497243872.1337,2022-01-01 00:00:00+00:00
+AGO,AO,Angola,Africa,Middle Africa,Luanda,38778554,1246700.0,128233959333.275,2022-01-01 00:00:00+00:00
+AIA,AI,Anguilla,Americas,Caribbean,The Valley,16010,91.0,,
+ALA,AX,Åland Islands,Europe,Northern Europe,Mariehamn,30654,1580.0,,
+ALB,AL,Albania,Europe,Southeast Europe,Tirana,2335930,28748.0,19017247013.8821,2022-01-01 00:00:00+00:00
+AND,AD,Andorra,Europe,Southern Europe,Andorra la Vella,90105,468.0,3380612573.4825,2022-01-01 00:00:00+00:00
+ARE,AE,United Arab Emirates,Asia,Western Asia,Abu Dhabi,11027129,83600.0,511403404642.173,2022-01-01 00:00:00+00:00
+ARG,AR,Argentina,Americas,South America,Buenos Aires,46466688,2780400.0,633993756301.08,2022-01-01 00:00:00+00:00
+ARM,AM,Armenia,Asia,Western Asia,Yerevan,3103900,29743.0,19513506553.1251,2022-01-01 00:00:00+00:00
+ASM,AS,American Samoa,Oceania,Polynesia,Pago Pago,43268,199.0,871000000.0,2022-01-01 00:00:00+00:00
+ATA,AQ,Antarctica,Antarctic,,,1300,14000000.0,,
+ATF,TF,French Southern and Antarctic Lands,Antarctic,,Port-aux-Français,400,7747.0,,
+ATG,AG,Antigua and Barbuda,Americas,Caribbean,Saint John's,106365,442.0,1857114814.81481,2022-01-01 00:00:00+00:00
+AUS,AU,Australia,Oceania,Australia and New Zealand,Canberra,27921150,7692024.0,1695627535475.8,2022-01-01 00:00:00+00:00
+AUT,AT,Austria,Europe,Central Europe,Vienna,9217573,83871.0,473221298968.216,2022-01-01 00:00:00+00:00
+AZE,AZ,Azerbaijan,Asia,Western Asia,Baku,10273450,86600.0,78807470588.2353,2022-01-01 00:00:00+00:00
+BDI,BI,Burundi,Africa,Eastern Africa,Gitega,12332788,27834.0,4020736756.64256,2022-01-01 00:00:00+00:00
+BEL,BE,Belgium,Europe,Western Europe,Brussels,11942772,30528.0,591474463578.602,2022-01-01 00:00:00+00:00
+BEN,BJ,Benin,Africa,Western Africa,Porto-Novo,13551992,112622.0,17425405090.862,2022-01-01 00:00:00+00:00
+BES,BQ,Caribbean Netherlands,Americas,Caribbean,Kralendijk,31980,328.0,,
+BFA,BF,Burkina Faso,Africa,Western Africa,Ouagadougou,22489126,272967.0,18622421394.6133,2022-01-01 00:00:00+00:00
+BGD,BD,Bangladesh,Asia,Southern Asia,Dhaka,169828911,147570.0,460131689083.083,2022-01-01 00:00:00+00:00
+BGR,BG,Bulgaria,Europe,Southeast Europe,Sofia,6423207,110879.0,90510784777.6397,2022-01-01 00:00:00+00:00
+BHR,BH,Bahrain,Asia,Western Asia,Manama,1603260,765.0,46458191489.3617,2022-01-01 00:00:00+00:00
+BHS,BS,Bahamas,Americas,Caribbean,Nassau,398165,13943.0,13896800000.0,2022-01-01 00:00:00+00:00
+BIH,BA,Bosnia and Herzegovina,Europe,Southeast Europe,Sarajevo,3412000,51209.0,24534663636.1778,2022-01-01 00:00:00+00:00
+BLM,BL,Saint Barthélemy,Americas,Caribbean,Gustavia,4255,21.0,,
+BLR,BY,Belarus,Europe,Eastern Europe,Minsk,9056080,207600.0,73775179924.603,2022-01-01 00:00:00+00:00
+BLZ,BZ,Belize,Americas,Central America,Belmopan,418982,22966.0,2846604350.0,2022-01-01 00:00:00+00:00
+BMU,BM,Bermuda,Americas,North America,Hamilton,64055,54.0,7767884000.0,2022-01-01 00:00:00+00:00
+BOL,BO,Bolivia,Americas,South America,Sucre,11365333,1098581.0,50959081953.6903,2022-01-01 00:00:00+00:00
+BRA,BR,Brazil,Americas,South America,Brasília,214211951,8515767.0,1951923942083.32,2022-01-01 00:00:00+00:00
+BRB,BB,Barbados,Americas,Caribbean,Bridgetown,261692,430.0,6886644900.0,2022-01-01 00:00:00+00:00
+BRN,BN,Brunei,Asia,South-Eastern Asia,Bandar Seri Begawan,458600,5765.0,16681536466.7183,2022-01-01 00:00:00+00:00
+BTN,BT,Bhutan,Asia,Southern Asia,Thimphu,790718,38394.0,2898227743.75576,2022-01-01 00:00:00+00:00
+BVT,BV,Bouvet Island,Antarctic,,,0,49.0,,
+BWA,BW,Botswana,Africa,Southern Africa,Gaborone,2515633,582000.0,20321150599.1523,2022-01-01 00:00:00+00:00
+CAF,CF,Central African Republic,Africa,Middle Africa,Bangui,5513282,622984.0,2382618615.01694,2022-01-01 00:00:00+00:00
+CAN,CA,Canada,Americas,North America,Ottawa,41798407,9984670.0,2200562785046.32,2022-01-01 00:00:00+00:00
+CCK,CC,Cocos (Keeling) Islands,Oceania,Australia and New Zealand,West Island,593,14.0,,
+CHE,CH,Switzerland,Europe,Western Europe,Bern,9154896,41284.0,858479038993.75,2022-01-01 00:00:00+00:00
+CHL,CL,Chile,Americas,South America,Santiago,20150948,756102.0,301099244104.003,2022-01-01 00:00:00+00:00
+CHN,CN,China,Asia,Eastern Asia,Beijing,1404890000,9706961.0,18316765021690.2,2022-01-01 00:00:00+00:00
+CIV,CI,Ivory Coast,Africa,Western Africa,Yamoussoukro,33293101,322463.0,70922824813.9102,2022-01-01 00:00:00+00:00
+CMR,CM,Cameroon,Africa,Middle Africa,Yaoundé,29442327,475442.0,44347206072.5513,2022-01-01 00:00:00+00:00
+COD,CD,DRC,Africa,Middle Africa,Kinshasa,116452000,2344858.0,70422346142.2023,2022-01-01 00:00:00+00:00
+COG,CG,Congo,Africa,Middle Africa,Brazzaville,6332961,342000.0,15817030154.6941,2022-01-01 00:00:00+00:00
+COK,CK,Cook Islands,Oceania,Polynesia,Avarua,15040,236.0,,
+COL,CO,Colombia,Americas,South America,Bogotá,53399171,1141748.0,345632492851.448,2022-01-01 00:00:00+00:00
+COM,KM,Comoros,Africa,Eastern Africa,Moroni,944388,1862.0,1279542248.96288,2022-01-01 00:00:00+00:00
+CPV,CV,Cabo Verde,Africa,Western Africa,Praia,491233,4033.0,2247003344.34242,2022-01-01 00:00:00+00:00
+CRI,CR,Costa Rica,Americas,Central America,San José,5160700,51100.0,71001226360.8008,2022-01-01 00:00:00+00:00
+CUB,CU,Cuba,Americas,Caribbean,Havana,9434593,109884.0,,
+CUW,CW,Curaçao,Americas,Caribbean,Willemstad,155826,444.0,3075180837.98883,2022-01-01 00:00:00+00:00
+CXR,CX,Christmas Island,Oceania,Australia and New Zealand,Flying Fish Cove,1692,135.0,,
+CYM,KY,Cayman Islands,Americas,Caribbean,George Town,90577,264.0,6653516041.43929,2022-01-01 00:00:00+00:00
+CYP,CY,Cyprus,Europe,Southern Europe,Nicosia,983000,9251.0,31218047043.8386,2022-01-01 00:00:00+00:00
+CZE,CZ,Czechia,Europe,Central Europe,Prague,10903655,78865.0,301831228325.556,2022-01-01 00:00:00+00:00
+DEU,DE,Germany,Europe,Western Europe,Berlin,83298787,357114.0,4201021706478.62,2022-01-01 00:00:00+00:00
+DJI,DJ,Djibouti,Africa,Eastern Africa,Djibouti,1066809,23200.0,3562814908.76149,2022-01-01 00:00:00+00:00
+DMA,DM,Dominica,Americas,Caribbean,Roseau,65514,751.0,623062962.962963,2022-01-01 00:00:00+00:00
+DNK,DK,Denmark,Europe,Northern Europe,Copenhagen,6032304,43094.0,400114306337.077,2022-01-01 00:00:00+00:00
+DOM,DO,Dominican Republic,Americas,Caribbean,Santo Domingo,11532151,48671.0,113478103598.499,2022-01-01 00:00:00+00:00
+DZA,DZ,Algeria,Africa,Northern Africa,Algiers,47400000,2381741.0,225581644702.568,2022-01-01 00:00:00+00:00
+ECU,EC,Ecuador,Americas,South America,Quito,18135478,276841.0,116133121000.0,2022-01-01 00:00:00+00:00
+EGY,EG,Egypt,Africa,Northern Africa,Cairo,108613296,1002450.0,476747720364.742,2022-01-01 00:00:00+00:00
+ERI,ER,Eritrea,Africa,Eastern Africa,Asmara,3682669,117600.0,,
+ESH,EH,Western Sahara,Africa,Northern Africa,El Aaiún,510713,266000.0,,
+ESP,ES,Spain,Europe,Southern Europe,Madrid,49801559,505992.0,1448850658406.62,2022-01-01 00:00:00+00:00
+EST,EE,Estonia,Europe,Northern Europe,Tallinn,1360745,45227.0,38226641740.29,2022-01-01 00:00:00+00:00
+ETH,ET,Ethiopia,Africa,Eastern Africa,Addis Ababa,111652998,1104300.0,123140304665.399,2022-01-01 00:00:00+00:00
+FIN,FI,Finland,Europe,Northern Europe,Helsinki,5659324,338424.0,280253099309.34,2022-01-01 00:00:00+00:00
+FJI,FJ,Fiji,Oceania,Melanesia,Suva,902623,18272.0,4977861885.60316,2022-01-01 00:00:00+00:00
+FLK,FK,Falkland Islands,Americas,South America,Stanley,3662,12173.0,,
+FRA,FR,France,Europe,Western Europe,Paris,69081996,551695.0,2794788137066.94,2022-01-01 00:00:00+00:00
+FRO,FO,Faroe Islands,Europe,Northern Europe,Tórshavn,56210,1393.0,3615241800.50058,2022-01-01 00:00:00+00:00
+FSM,FM,Micronesia,Oceania,Micronesia,Palikir,75817,702.0,415232900.0,2022-01-01 00:00:00+00:00
+GAB,GA,Gabon,Africa,Middle Africa,Libreville,2469296,267668.0,20440655695.229,2022-01-01 00:00:00+00:00
+GBR,GB,United Kingdom,Europe,Northern Europe,London,66912637,242900.0,3181244350465.41,2022-01-01 00:00:00+00:00
+GEO,GE,Georgia,Asia,Western Asia,Tbilisi,3657000,69700.0,24984568959.605,2022-01-01 00:00:00+00:00
+GGY,GG,Guernsey,Europe,Northern Europe,St. Peter Port,64781,78.0,,
+GHA,GH,Ghana,Africa,Western Africa,Accra,34378768,238533.0,73919003212.1998,2022-01-01 00:00:00+00:00
+GIB,GI,Gibraltar,Europe,Southern Europe,Gibraltar,38196,6.0,,
+GIN,GN,Guinea,Africa,Western Africa,Conakry,17521167,245857.0,19910452541.9219,2022-01-01 00:00:00+00:00
+GLP,GP,Guadeloupe,Americas,Caribbean,Basse-Terre,400132,1628.0,,
+GMB,GM,Gambia,Africa,Western Africa,Banjul,2422712,10689.0,2204734527.88096,2022-01-01 00:00:00+00:00
+GNB,GW,Guinea-Bissau,Africa,Western Africa,Bissau,1890252,36125.0,1856239954.81555,2022-01-01 00:00:00+00:00
+GNQ,GQ,Equatorial Guinea,Africa,Middle Africa,Malabo,1795834,28051.0,13687643435.6249,2022-01-01 00:00:00+00:00
+GRC,GR,Greece,Europe,Southern Europe,Athens,10372335,131990.0,217990189600.69,2022-01-01 00:00:00+00:00
+GRD,GD,Grenada,Americas,Caribbean,St. George's,109021,344.0,1224007407.40741,2022-01-01 00:00:00+00:00
+GRL,GL,Greenland,Americas,North America,Nuuk,56945,2166086.0,3152334771.77992,2022-01-01 00:00:00+00:00
+GTM,GT,Guatemala,Americas,Central America,Guatemala City,18406359,108889.0,95609727055.5754,2022-01-01 00:00:00+00:00
+GUF,GF,French Guiana,Americas,South America,Cayenne,254541,83534.0,,
+GUM,GU,Guam,Oceania,Micronesia,Hagåtña,153836,549.0,6910000000.0,2022-01-01 00:00:00+00:00
+GUY,GY,Guyana,Americas,South America,Georgetown,956044,214969.0,14718388489.2086,2022-01-01 00:00:00+00:00
+HKG,HK,Hong Kong,Asia,Eastern Asia,City of Victoria,7498100,1104.0,358673532516.529,2022-01-01 00:00:00+00:00
+HMD,HM,Heard Island and McDonald Islands,Antarctic,,,0,412.0,,
+HND,HN,Honduras,Americas,Central America,Tegucigalpa,10186738,112492.0,31426041806.7985,2022-01-01 00:00:00+00:00
+HRV,HR,Croatia,Europe,Southeast Europe,Zagreb,3874993,56594.0,71196460236.6301,2022-01-01 00:00:00+00:00
+HTI,HT,Haiti,Americas,Caribbean,Port-au-Prince,11867032,27750.0,20113007125.93,2022-01-01 00:00:00+00:00
+HUN,HU,Hungary,Europe,Central Europe,Budapest,9488428,93028.0,177002580544.155,2022-01-01 00:00:00+00:00
+IDN,ID,Indonesia,Asia,South-Eastern Asia,Jakarta,288315089,1904569.0,1319101183380.15,2022-01-01 00:00:00+00:00
+IMN,IM,Isle of Man,Europe,Northern Europe,Douglas,84523,572.0,7431257410.92713,2022-01-01 00:00:00+00:00
+IND,IN,India,Asia,Southern Asia,New Delhi,1429404000,3287590.0,3249938492013.47,2022-01-01 00:00:00+00:00
+IOT,IO,British Indian Ocean Territory,Africa,Eastern Africa,Diego Garcia,2000,60.0,,
+IRL,IE,Ireland,Europe,Northern Europe,Dublin,5525600,70273.0,548341794599.09,2022-01-01 00:00:00+00:00
+IRN,IR,Iran,Asia,Southern Asia,Tehran,87134000,1648195.0,422662261525.665,2022-01-01 00:00:00+00:00
+IRQ,IQ,Iraq,Asia,Western Asia,Baghdad,46118793,438317.0,287372232137.931,2022-01-01 00:00:00+00:00
+ISL,IS,Iceland,Europe,Northern Europe,Reykjavik,396500,103000.0,29176227825.4736,2022-01-01 00:00:00+00:00
+ISR,IL,Israel,Asia,Western Asia,Jerusalem,10305000,20770.0,525157951212.871,2022-01-01 00:00:00+00:00
+ITA,IT,Italy,Europe,Southern Europe,Rome,58943673,301336.0,2104067630319.46,2022-01-01 00:00:00+00:00
+JAM,JM,Jamaica,Americas,Caribbean,Kingston,2774538,10991.0,18813516805.214,2022-01-01 00:00:00+00:00
+JEY,JE,Jersey,Europe,Northern Europe,Saint Helier,104540,116.0,,
+JOR,JO,Jordan,Asia,Western Asia,Amman,11937000,89342.0,53516930140.8451,2022-01-01 00:00:00+00:00
+JPN,JP,Japan,Asia,Eastern Asia,Tokyo,122650000,377930.0,4447976207314.78,2022-01-01 00:00:00+00:00
+KAZ,KZ,Kazakhstan,Asia,Central Asia,Astana,20618796,2724900.0,225496328925.494,2022-01-01 00:00:00+00:00
+KEN,KE,Kenya,Africa,Eastern Africa,Nairobi,54227015,580367.0,114448978152.637,2022-01-01 00:00:00+00:00
+KGZ,KG,Kyrgyzstan,Asia,Central Asia,Bishkek,7404300,199951.0,12134931017.9465,2022-01-01 00:00:00+00:00
+KHM,KH,Cambodia,Asia,South-Eastern Asia,Phnom Penh,17816143,181035.0,39994532959.6074,2022-01-01 00:00:00+00:00
+KIR,KI,Kiribati,Oceania,Micronesia,South Tarawa,120740,811.0,271214374.500577,2022-01-01 00:00:00+00:00
+KNA,KN,Saint Kitts and Nevis,Americas,Caribbean,Basseterre,54338,261.0,981429629.62963,2022-01-01 00:00:00+00:00
+KOR,KR,South Korea,Asia,Eastern Asia,Seoul,51106229,100210.0,1799363116866.52,2022-01-01 00:00:00+00:00
+KWT,KW,Kuwait,Asia,Western Asia,Kuwait City,4881254,17818.0,183502046693.878,2022-01-01 00:00:00+00:00
+LAO,LA,Laos,Asia,South-Eastern Asia,Vientiane,7745000,236800.0,15468785203.7532,2022-01-01 00:00:00+00:00
+LBN,LB,Lebanon,Asia,Western Asia,Beirut,5895466,10452.0,20992421948.8081,2022-01-01 00:00:00+00:00
+LBR,LR,Liberia,Africa,Western Africa,Monrovia,5248621,111369.0,4001047000.0,2022-01-01 00:00:00+00:00
+LBY,LY,Libya,Africa,Northern Africa,Tripoli,7539852,1759540.0,43246297921.8499,2022-01-01 00:00:00+00:00
+LCA,LC,Saint Lucia,Americas,Caribbean,Castries,184100,616.0,2319888888.88889,2022-01-01 00:00:00+00:00
+LIE,LI,Liechtenstein,Europe,Western Europe,Vaduz,41237,160.0,7426856242.7736,2022-01-01 00:00:00+00:00
+LKA,LK,Sri Lanka,Asia,Southern Asia,Sri Jayawardenepura Kotte,21756000,65610.0,74143020303.663,2022-01-01 00:00:00+00:00
+LSO,LS,Lesotho,Africa,Southern Africa,Maseru,2116427,30355.0,2354980960.02697,2022-01-01 00:00:00+00:00
+LTU,LT,Lithuania,Europe,Northern Europe,Vilnius,2887761,65300.0,70639687325.6326,2022-01-01 00:00:00+00:00
+LUX,LU,Luxembourg,Europe,Western Europe,Luxembourg,690959,2586.0,80801680397.0139,2022-01-01 00:00:00+00:00
+LVA,LV,Latvia,Europe,Northern Europe,Riga,1832100,64559.0,38003198508.9107,2022-01-01 00:00:00+00:00
+MAC,MO,Macau,Asia,Eastern Asia,,686500,30.0,24929307447.3237,2022-01-01 00:00:00+00:00
+MAF,MF,Saint Martin,Americas,Caribbean,Marigot,38659,53.0,,
+MAR,MA,Morocco,Africa,Northern Africa,Rabat,37254695,446550.0,131245312804.483,2022-01-01 00:00:00+00:00
+MCO,MC,Monaco,Europe,Western Europe,Monaco,38857,2.02,8800432773.73544,2022-01-01 00:00:00+00:00
+MDA,MD,Moldova,Europe,Eastern Europe,Chișinău,2365600,33846.0,14525337523.7271,2022-01-01 00:00:00+00:00
+MDG,MG,Madagascar,Africa,Eastern Africa,Antananarivo,32658977,587041.0,15342178598.2475,2022-01-01 00:00:00+00:00
+MDV,MV,Maldives,Asia,Southern Asia,Malé,515132,300.0,6177123352.26211,2022-01-01 00:00:00+00:00
+MEX,MX,Mexico,Americas,North America,Mexico City,131231919,1964375.0,1466934724243.38,2022-01-01 00:00:00+00:00
+MHL,MH,Marshall Islands,Oceania,Micronesia,Majuro,37548,181.0,258723500.0,2022-01-01 00:00:00+00:00
+MKD,MK,North Macedonia,Europe,Southeast Europe,Skopje,1836713,25713.0,13932436550.0883,2022-01-01 00:00:00+00:00
+MLI,ML,Mali,Africa,Western Africa,Bamako,23929000,1240192.0,22539987718.7642,2022-01-01 00:00:00+00:00
+MLT,MT,Malta,Europe,Southern Europe,Valletta,588254,316.0,18938869147.0818,2022-01-01 00:00:00+00:00
+MMR,MM,Myanmar,Asia,South-Eastern Asia,Naypyidaw,51375327,676578.0,62253049891.6449,2022-01-01 00:00:00+00:00
+MNE,ME,Montenegro,Europe,Southeast Europe,Podgorica,622902,13812.0,6259721790.0652,2022-01-01 00:00:00+00:00
+MNG,MN,Mongolia,Asia,Eastern Asia,Ulan Bator,3591120,1564110.0,17146471713.748,2022-01-01 00:00:00+00:00
+MNP,MP,Northern Mariana Islands,Oceania,Micronesia,Saipan,46078,464.0,1096000000.0,2022-01-01 00:00:00+00:00
+MOZ,MZ,Mozambique,Africa,Eastern Africa,Maputo,34958973,801590.0,18884232598.8698,2022-01-01 00:00:00+00:00
+MRT,MR,Mauritania,Africa,Western Africa,Nouakchott,4927532,1030700.0,9562497460.55394,2022-01-01 00:00:00+00:00
+MSR,MS,Montserrat,Americas,Caribbean,Plymouth,4386,102.0,,
+MTQ,MQ,Martinique,Americas,Caribbean,Fort-de-France,378243,1128.0,,
+MUS,MU,Mauritius,Africa,Eastern Africa,Port Louis,1240316,2040.0,12936444123.3037,2022-01-01 00:00:00+00:00
+MWI,MW,Malawi,Africa,Eastern Africa,Lilongwe,21201635,118484.0,12429059928.102,2022-01-01 00:00:00+00:00
+MYS,MY,Malaysia,Asia,South-Eastern Asia,Kuala Lumpur,34389400,330803.0,407830525989.553,2022-01-01 00:00:00+00:00
+MYT,YT,Mayotte,Africa,Eastern Africa,Mamoudzou,226915,374.0,,
+NAM,NA,Namibia,Africa,Southern Africa,Windhoek,3022401,825615.0,12569449123.3661,2022-01-01 00:00:00+00:00
+NCL,NC,New Caledonia,Oceania,Melanesia,Nouméa,264596,18575.0,9623318718.31459,2022-01-01 00:00:00+00:00
+NER,NE,Niger,Africa,Western Africa,Niamey,27522750,1267000.0,15531799640.9005,2022-01-01 00:00:00+00:00
+NFK,NF,Norfolk Island,Oceania,Australia and New Zealand,Kingston,2188,36.0,,
+NGA,NG,Nigeria,Africa,Western Africa,Abuja,223800000,923768.0,646950257575.455,2022-01-01 00:00:00+00:00
+NIC,NI,Nicaragua,Americas,Central America,Managua,6874748,130373.0,15634573555.9049,2022-01-01 00:00:00+00:00
+NIU,NU,Niue,Oceania,Polynesia,Alofi,1681,260.0,,
+NLD,NL,Netherlands,Europe,Western Europe,Amsterdam,18171612,41850.0,1046540797548.64,2022-01-01 00:00:00+00:00
+NOR,NO,Norway,Europe,Northern Europe,Oslo,5636904,323802.0,617321834098.986,2022-01-01 00:00:00+00:00
+NPL,NP,Nepal,Asia,Southern Asia,Kathmandu,30034040,147181.0,41182939519.8161,2022-01-01 00:00:00+00:00
+NRU,NR,Naoero,Oceania,Micronesia,Yaren,11680,21.0,180671357.349805,2022-01-01 00:00:00+00:00
+NZL,NZ,New Zealand,Oceania,Australia and New Zealand,Wellington,4993923,270467.0,249723029451.237,2022-01-01 00:00:00+00:00
+OMN,OM,Oman,Asia,Western Asia,Muscat,5398645,309500.0,109852795838.752,2022-01-01 00:00:00+00:00
+PAK,PK,Pakistan,Asia,Southern Asia,Islamabad,241499431,881912.0,374890295666.694,2022-01-01 00:00:00+00:00
+PAN,PA,Panama,Americas,Central America,Panama City,4064780,75417.0,76479304500.0,2022-01-01 00:00:00+00:00
+PCN,PN,Pitcairn Islands,Oceania,Polynesia,Adamstown,35,47.0,,
+PER,PE,Peru,Americas,South America,Lima,34157732,1285216.0,246169867862.821,2022-01-01 00:00:00+00:00
+PHL,PH,Philippines,Asia,South-Eastern Asia,Manila,114849400,342353.0,404353369604.631,2022-01-01 00:00:00+00:00
+PLW,PW,Palau,Oceania,Micronesia,Ngerulmud,16733,459.0,247470812.5,2022-01-01 00:00:00+00:00
+PNG,PG,Papua New Guinea,Oceania,Melanesia,Port Moresby,11781559,462840.0,31653230962.4549,2022-01-01 00:00:00+00:00
+POL,PL,Poland,Europe,Central Europe,Warsaw,37232000,312679.0,695607470875.276,2022-01-01 00:00:00+00:00
+PRI,PR,Puerto Rico,Americas,Caribbean,San Juan,3184195,8870.0,113843700000.0,2022-01-01 00:00:00+00:00
+PRK,KP,North Korea,Asia,Eastern Asia,Pyongyang,25950000,120538.0,,
+PRT,PT,Portugal,Europe,Southern Europe,Lisbon,11424031,92090.0,256898677175.024,2022-01-01 00:00:00+00:00
+PRY,PY,Paraguay,Americas,South America,Asunción,6109644,406752.0,41841201626.7253,2022-01-01 00:00:00+00:00
+PSE,PS,Palestine,Asia,Western Asia,Ramallah,5557096,6220.0,19165500000.0,2022-01-01 00:00:00+00:00
+PYF,PF,French Polynesia,Oceania,Polynesia,Papeetē,278786,4167.0,5622688338.06317,2022-01-01 00:00:00+00:00
+QAT,QA,Qatar,Asia,Western Asia,Doha,3370611,11586.0,235709325714.286,2022-01-01 00:00:00+00:00
+REU,RE,Réunion,Africa,Eastern Africa,Saint-Denis,840974,2511.0,,
+ROU,RO,Romania,Europe,Southeast Europe,Bucharest,19041322,238391.0,295317862855.924,2022-01-01 00:00:00+00:00
+RUS,RU,Russia,Europe,Eastern Europe,Moscow,146028325,17098242.0,2292495097681.47,2022-01-01 00:00:00+00:00
+RWA,RW,Rwanda,Africa,Eastern Africa,Kigali,14418145,26338.0,13747404814.2677,2022-01-01 00:00:00+00:00
+SAU,SA,Saudi Arabia,Asia,Western Asia,Riyadh,35325004,2149690.0,1239075200000.0,2022-01-01 00:00:00+00:00
+SDN,SD,Sudan,Africa,Northern Africa,Khartoum,53282719,1886068.0,51666875363.0963,2022-01-01 00:00:00+00:00
+SEN,SN,Senegal,Africa,Western Africa,Dakar,19575061,196722.0,27783332222.6759,2022-01-01 00:00:00+00:00
+SGP,SG,Singapore,Asia,South-Eastern Asia,Singapore,6208500,710.0,514252535238.749,2022-01-01 00:00:00+00:00
+SGS,GS,South Georgia,Antarctic,,King Edward Point,32,3903.0,,
+SHN,SH,"Saint Helena, Ascension and Tristan da Cunha",Africa,Western Africa,Jamestown,53192,394.0,,
+SJM,SJ,Svalbard and Jan Mayen,Europe,Northern Europe,Longyearbyen,2562,61399.0,,
+SLB,SB,Solomon Islands,Oceania,Melanesia,Honiara,828857,28896.0,1466670929.62333,2022-01-01 00:00:00+00:00
+SLE,SL,Sierra Leone,Africa,Western Africa,Freetown,8460512,71740.0,7121125277.18159,2022-01-01 00:00:00+00:00
+SLV,SV,El Salvador,Americas,Central America,San Salvador,6029976,21041.0,31870110000.0,2022-01-01 00:00:00+00:00
+SMR,SM,San Marino,Europe,Southern Europe,City of San Marino,34172,61.0,1831701022.87082,2022-01-01 00:00:00+00:00
+SOM,SO,Somalia,Africa,Eastern Africa,Mogadishu,20305907,637657.0,10203000000.0,2022-01-01 00:00:00+00:00
+SPM,PM,Saint Pierre and Miquelon,Americas,North America,Saint-Pierre,5819,242.0,,
+SRB,RS,Serbia,Europe,Southeast Europe,Belgrade,6532019,88361.0,66809895701.2152,2022-01-01 00:00:00+00:00
+SSD,SS,South Sudan,Africa,Middle Africa,Juba,12703714,619745.0,,
+STP,ST,São Tomé and Príncipe,Africa,Middle Africa,São Tomé,220372,964.0,540809499.189348,2022-01-01 00:00:00+00:00
+SUR,SR,Suriname,Americas,South America,Paramaribo,616500,163820.0,3791603200.0259,2022-01-01 00:00:00+00:00
+SVK,SK,Slovakia,Europe,Central Europe,Bratislava,5403009,49037.0,115792972358.209,2022-01-01 00:00:00+00:00
+SVN,SI,Slovenia,Europe,Central Europe,Ljubljana,2136385,20273.0,59899117741.0022,2022-01-01 00:00:00+00:00
+SWE,SE,Sweden,Europe,Northern Europe,Stockholm,10621103,450295.0,575071237640.921,2022-01-01 00:00:00+00:00
+SWZ,SZ,Eswatini,Africa,Southern Africa,Mbabane,1235549,17364.0,4746660273.50829,2022-01-01 00:00:00+00:00
+SXM,SX,Sint Maarten,Americas,Caribbean,Philipsburg,58477,34.0,1592564636.87151,2022-01-01 00:00:00+00:00
+SYC,SC,Seychelles,Africa,Eastern Africa,Victoria,123565,452.0,1999888599.25474,2022-01-01 00:00:00+00:00
+SYR,SY,Syria,Asia,Western Asia,Damascus,26472497,185180.0,23737634644.3994,2022-01-01 00:00:00+00:00
+TCA,TC,Turks and Caicos Islands,Americas,Caribbean,Cockburn Town,50828,948.0,1434119000.0,2022-01-01 00:00:00+00:00
+TCD,TD,Chad,Africa,Middle Africa,N'Djamena,20031602,1284000.0,17828508289.6049,2022-01-01 00:00:00+00:00
+TGO,TG,Togo,Africa,Western Africa,Lomé,8095498,56785.0,8646453099.4124,2022-01-01 00:00:00+00:00
+THA,TH,Thailand,Asia,South-Eastern Asia,Bangkok,70250751,513120.0,495691837308.033,2022-01-01 00:00:00+00:00
+TJK,TJ,Tajikistan,Asia,Central Asia,Dushanbe,10721000,143100.0,10713525200.3998,2022-01-01 00:00:00+00:00
+TKL,TK,Tokelau,Oceania,Polynesia,Fakaofo,1411,12.0,,
+TKM,TM,Turkmenistan,Asia,Central Asia,Ashgabat,7057841,488100.0,37583913148.2791,2022-01-01 00:00:00+00:00
+TLS,TL,Timor-Leste,Asia,South-Eastern Asia,Dili,1409452,14874.0,3208599900.0,2022-01-01 00:00:00+00:00
+TON,TO,Tonga,Oceania,Polynesia,Nuku'alofa,100179,747.0,556514556.392844,2022-01-01 00:00:00+00:00
+TTO,TT,Trinidad and Tobago,Americas,Caribbean,Port of Spain,1512779,5130.0,28341164301.126,2022-01-01 00:00:00+00:00
+TUN,TN,Tunisia,Africa,Northern Africa,Tunis,11992843,163610.0,44929920092.7955,2022-01-01 00:00:00+00:00
+TUR,TR,Turkey,Asia,Western Asia,Ankara,86092168,783562.0,926097476913.818,2022-01-01 00:00:00+00:00
+TUV,TV,Tuvalu,Oceania,Polynesia,Funafuti,10643,26.0,54104146.3198082,2022-01-01 00:00:00+00:00
+TWN,TW,Taiwan,Asia,Eastern Asia,Taipei,23224721,36193.0,,
+TZA,TZ,Tanzania,Africa,Eastern Africa,Dodoma,70038850,945087.0,75749121846.9703,2022-01-01 00:00:00+00:00
+UGA,UG,Uganda,Africa,Eastern Africa,Kampala,45905417,241550.0,45565333210.9108,2022-01-01 00:00:00+00:00
+UKR,UA,Ukraine,Europe,Eastern Europe,Kyiv,28700000,603500.0,161989520721.19,2022-01-01 00:00:00+00:00
+UMI,UM,United States Minor Outlying Islands,Americas,North America,,300,34.2,,
+UNK,XK,Kosovo,Europe,Southeast Europe,Pristina,1582322,10908.0,,
+URY,UY,Uruguay,Americas,South America,Montevideo,3480601,181034.0,71240669088.0587,2022-01-01 00:00:00+00:00
+USA,US,United States,Americas,North America,"Washington, D.C.",341784857,9372610.0,26054614000000.0,2022-01-01 00:00:00+00:00
+UZB,UZ,Uzbekistan,Asia,Central Asia,Tashkent,39047321,447400.0,94286355836.1594,2022-01-01 00:00:00+00:00
+VAT,VA,Vatican City,Europe,Southern Europe,Vatican City,882,0.44,,
+VCT,VC,Saint Vincent and the Grenadines,Americas,Caribbean,Kingstown,109296,389.0,989188888.888889,2022-01-01 00:00:00+00:00
+VEN,VE,Venezuela,Americas,South America,Caracas,28633711,916445.0,89013251020.9831,2022-01-01 00:00:00+00:00
+VGB,VG,British Virgin Islands,Americas,Caribbean,Road Town,38984,151.0,,
+VIR,VI,United States Virgin Islands,Americas,Caribbean,Charlotte Amalie,87146,347.0,4672000000.0,2022-01-01 00:00:00+00:00
+VNM,VN,Vietnam,Asia,South-Eastern Asia,Hanoi,102300000,331212.0,413445230668.578,2022-01-01 00:00:00+00:00
+VUT,VU,Vanuatu,Oceania,Melanesia,Port Vila,321409,12189.0,1151863789.76624,2022-01-01 00:00:00+00:00
+WLF,WF,Wallis and Futuna,Oceania,Polynesia,Mata-Utu,11151,142.0,,
+WSM,WS,Samoa,Oceania,Polynesia,Apia,205557,2842.0,889554711.842341,2022-01-01 00:00:00+00:00
+YEM,YE,Yemen,Asia,Western Asia,Sana'a,32684503,527968.0,,
+ZAF,ZA,South Africa,Africa,Southern Africa,Pretoria,63015904,1221037.0,407596043067.885,2022-01-01 00:00:00+00:00
+ZMB,ZM,Zambia,Africa,Eastern Africa,Lusaka,23003214,752612.0,29163782140.4858,2022-01-01 00:00:00+00:00
+ZWE,ZW,Zimbabwe,Africa,Southern Africa,Harare,16175966,390757.0,40757585308.5016,2022-01-01 00:00:00+00:00

@@ -1,0 +1,616 @@
+{
+  "name": "Lab3",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {}
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.4,
+      "position": [
+        -832,
+        -32
+      ],
+      "id": "200974ed-19ef-4245-860e-0481444ab085",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "[]",
+        "include": "allOtherFields",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        -336,
+        400
+      ],
+      "id": "788cf1c8-6d8a-45c4-842c-532dc646b5d2",
+      "name": "Split Out"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "c3046434-9859-47d8-b440-c147781b1fa2",
+              "name": "post_title",
+              "value": "={{ $json.title }}",
+              "type": "string"
+            },
+            {
+              "id": "c6c19528-e643-49f3-989d-beea4c5ee030",
+              "name": "post_id",
+              "value": "={{ $json.id }}",
+              "type": "number"
+            },
+            {
+              "id": "d243a71b-04a4-4da5-9443-01f3d01e8454",
+              "name": "title_length",
+              "value": "={{ $json.title.length }}",
+              "type": "number"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        -112,
+        400
+      ],
+      "id": "43dfff64-3a74-45b2-9ef4-24b6d4a42160",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "url": "https://api.restcountries.com/countries/v5",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "limit",
+              "value": "100"
+            },
+            {
+              "name": "=offset",
+              "value": "={{ ($pageCount) * 100 }}"
+            },
+            {
+              "name": "response_fields",
+              "value": "names.common,codes.alpha_2,codes.alpha_3,capitals,region,subregion,population,area,languages,currencies,borders,timezones"
+            }
+          ]
+        },
+        "options": {
+          "pagination": {
+            "pagination": {
+              "parameters": {
+                "parameters": [
+                  {
+                    "name": "offset",
+                    "value": "={{ ($pageCount) * 100 }}"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        -560,
+        -192
+      ],
+      "id": "a40f7023-e99a-4b12-8221-4a0f27a3855a",
+      "name": "REST Countries",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "Lci5RhbbMBlp9RrL",
+          "name": "Header Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "https://jsonplaceholder.typicode.com/posts",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "_limit",
+              "value": "100"
+            }
+          ]
+        },
+        "options": {
+          "pagination": {
+            "pagination": {
+              "parameters": {
+                "parameters": [
+                  {
+                    "name": "_page",
+                    "value": "={{ $pageCount + 1 }}"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        -560,
+        400
+      ],
+      "id": "16e66184-93a6-4856-902e-33a2b5e3e28f",
+      "name": "JSONPlaceholder"
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "data.objects",
+        "include": "allOtherFields",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        -336,
+        -192
+      ],
+      "id": "e4e1da8d-8629-4be2-b3ac-d862aaee59b3",
+      "name": "Split Out1"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "989a4d54-2663-4276-a6e6-5011eee06f74",
+              "name": "cca3",
+              "value": "={{ $json.codes.alpha_3 }}",
+              "type": "string"
+            },
+            {
+              "id": "3b40cb04-5435-4118-bc10-c3eaf127dce8",
+              "name": "cca2",
+              "value": "={{ $json.codes.alpha_2 }}",
+              "type": "string"
+            },
+            {
+              "id": "bececec1-0165-4bd2-90a0-47ad1eed1b72",
+              "name": "name_common",
+              "value": "={{ $json.names.common }}",
+              "type": "string"
+            },
+            {
+              "id": "1c25a438-8b15-4492-90a8-27663054a1d7",
+              "name": "region",
+              "value": "={{ $json.region }}",
+              "type": "string"
+            },
+            {
+              "id": "ad2d0318-01f6-4a25-a80d-e8dcb0e64c24",
+              "name": "subregion",
+              "value": "={{ $json.subregion }}",
+              "type": "string"
+            },
+            {
+              "id": "d836c656-fa89-464f-aad2-dbbe01131c1d",
+              "name": "population",
+              "value": "={{ $json.population }}",
+              "type": "number"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        -112,
+        -192
+      ],
+      "id": "e102bddf-8d8c-47ee-8b86-26a31654712c",
+      "name": "Edit Fields1"
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "advanced": true,
+        "mergeByFields": {
+          "values": [
+            {
+              "field1": "cca3",
+              "field2": "country_id"
+            }
+          ]
+        },
+        "joinMode": "keepEverything",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        96,
+        -64
+      ],
+      "id": "79ff8a39-b284-473f-9a08-b8aa600bf17a",
+      "name": "Merge"
+    },
+    {
+      "parameters": {
+        "url": "https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "format",
+              "value": "json"
+            },
+            {
+              "name": "date",
+              "value": "2022"
+            },
+            {
+              "name": "per_page",
+              "value": "1000"
+            }
+          ]
+        },
+        "options": {
+          "pagination": {
+            "pagination": {
+              "parameters": {
+                "parameters": [
+                  {
+                    "name": "=page",
+                    "value": "={{ $pageCount + 1 }}"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        -560,
+        160
+      ],
+      "id": "bc7513a9-ddfc-4822-b140-d2370b7e9155",
+      "name": "World Bank"
+    },
+    {
+      "parameters": {
+        "url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "format",
+              "value": "json"
+            },
+            {
+              "name": "date",
+              "value": "2022"
+            },
+            {
+              "name": "per_page",
+              "value": "1000"
+            }
+          ]
+        },
+        "options": {
+          "pagination": {
+            "pagination": {
+              "parameters": {
+                "parameters": [
+                  {
+                    "name": "=page",
+                    "value": "={{ $pageCount + 1 }}"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        -560,
+        -16
+      ],
+      "id": "5b618df6-7f7d-46cb-ba21-e611e111f36b",
+      "name": "World Bank1"
+    },
+    {
+      "parameters": {
+        "jsCode": "// World Bank: [meta, data] → возвращаем data\nconst items = $input.all();\nconst result = [];\n\nfor (const item of items) {\n  const raw = item.json;\n  // Если это массив [meta, data]\n  if (Array.isArray(raw) && raw.length >= 2 && Array.isArray(raw[1])) {\n    for (const row of raw[1]) {\n      result.push({ json: row });\n    }\n  }\n}\n\nreturn result;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -352,
+        64
+      ],
+      "id": "bab4950c-3c8f-457b-afa0-7a28c7d7a900",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "8d728568-5902-40e6-ba89-24c8f9849881",
+              "name": "country_id",
+              "value": "={{ $json.countryiso3code }}",
+              "type": "string"
+            },
+            {
+              "id": "3b929a4f-7550-4964-8b0a-d5fcbca2ab4e",
+              "name": "indicator_id",
+              "value": "={{ $json.indicator.id }}",
+              "type": "string"
+            },
+            {
+              "id": "f9666fdc-b4ae-4baa-8ff4-684e6e88f53c",
+              "name": "value",
+              "value": "={{ $json.value }}",
+              "type": "number"
+            },
+            {
+              "id": "dff4159d-66bd-4f59-b297-d4cfe3782ae5",
+              "name": "date",
+              "value": "={{ $json.date }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        -128,
+        64
+      ],
+      "id": "034e3b90-ddfc-48cb-af7f-2847d979cb2d",
+      "name": "Edit Fields2"
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "mode": "list",
+          "value": ""
+        },
+        "sheetName": {
+          "__rl": true,
+          "mode": "list",
+          "value": ""
+        }
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        288,
+        -64
+      ],
+      "id": "5a77587b-f1e5-4ff9-9009-ef1186a2bd96",
+      "name": "Append row in sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "pwFVemuqkuCwOhPm",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "mode": "list",
+          "value": ""
+        },
+        "sheetName": {
+          "__rl": true,
+          "mode": "list",
+          "value": ""
+        }
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        288,
+        400
+      ],
+      "id": "5625ab19-348b-4ac8-9e15-a6d4929d4f50",
+      "name": "Append row in sheet1",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "pwFVemuqkuCwOhPm",
+          "name": "Google Sheets account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "REST Countries",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "JSONPlaceholder",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "World Bank1",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "World Bank",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "REST Countries": {
+      "main": [
+        [
+          {
+            "node": "Split Out1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "JSONPlaceholder": {
+      "main": [
+        [
+          {
+            "node": "Split Out",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out1": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields1": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Append row in sheet1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Append row in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "World Bank1": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "World Bank": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields2": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "87988864-5560-49ab-ae9d-a23bd53cce5b",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "b75ddc89b89cf3ff7277710eafdbdec760aa4c5208a7c01dbe79b21193070f6e"
+  },
+  "nodeGroups": [],
+  "id": "xVS32HOBy9GqTegl",
+  "tags": []
+}
