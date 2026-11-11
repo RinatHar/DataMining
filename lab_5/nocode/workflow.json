@@ -1,0 +1,976 @@
+{
+  "name": "lb5_two_sources_quotes_pagination_v8_optimized",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.4,
+      "position": [
+        6192,
+        11456
+      ],
+      "name": "Schedule Trigger",
+      "id": "a305b15c-481e-401b-9626-14241f2b114c"
+    },
+    {
+      "parameters": {
+        "jsCode": "const sd = $getWorkflowStaticData('global');\nsd.quotes = [];\nreturn $input.all();"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        6384,
+        11456
+      ],
+      "name": "Clear Memory",
+      "id": "29f75965-9747-49e0-a7d7-6a1970a3668a"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        6608,
+        11456
+      ],
+      "name": "Split Flow",
+      "id": "1dc8ea8d-c73b-49d5-8fd4-2ec20222cfac"
+    },
+    {
+      "parameters": {
+        "url": "https://books.toscrape.com/",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        6832,
+        11264
+      ],
+      "name": "HTTP Request (books catalog)",
+      "id": "54a07eaf-704d-4e6e-9f35-f9eaffa5e166",
+      "retryOnFail": true
+    },
+    {
+      "parameters": {
+        "operation": "extractHtmlContent",
+        "extractionValues": {
+          "values": [
+            {
+              "key": "card_links",
+              "cssSelector": "article.product_pod h3 a",
+              "returnValue": "attribute",
+              "attribute": "href",
+              "returnArray": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.html",
+      "typeVersion": 1.2,
+      "position": [
+        7056,
+        11264
+      ],
+      "name": "HTML books catalog",
+      "id": "5908c7e8-7a1f-4e77-94b0-345810f89050"
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "card_links",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        7264,
+        11264
+      ],
+      "name": "Split Out cards",
+      "id": "ce714887-a244-4790-8e70-8f2b27c0d534"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "name": "card_url",
+              "value": "=https://books.toscrape.com/{{ $json.card_links }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        7488,
+        11264
+      ],
+      "name": "Edit Fields card_url",
+      "id": "5a02baf1-bd3b-48b2-9938-3d6b0c09eb3e"
+    },
+    {
+      "parameters": {
+        "url": "={{ $json.card_url }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        7936,
+        11376
+      ],
+      "name": "HTTP Request (book card)",
+      "id": "a7e04501-dd48-4538-a776-6eda25948251",
+      "retryOnFail": true
+    },
+    {
+      "parameters": {
+        "operation": "extractHtmlContent",
+        "extractionValues": {
+          "values": [
+            {
+              "key": "title",
+              "cssSelector": "h1"
+            },
+            {
+              "key": "upc",
+              "cssSelector": "table.table-striped tr:nth-child(1) td"
+            },
+            {
+              "key": "price",
+              "cssSelector": "table.table-striped tr:nth-child(4) td"
+            },
+            {
+              "key": "availability",
+              "cssSelector": "table.table-striped tr:nth-child(6) td"
+            },
+            {
+              "key": "category",
+              "cssSelector": "ul.breadcrumb li:nth-child(3) a"
+            },
+            {
+              "key": "description",
+              "cssSelector": "#product_description + p"
+            }
+          ]
+        },
+        "options": {
+          "trimValues": true,
+          "cleanUpText": true
+        }
+      },
+      "type": "n8n-nodes-base.html",
+      "typeVersion": 1.2,
+      "position": [
+        8144,
+        11376
+      ],
+      "name": "HTML book fields",
+      "id": "e05444e2-e480-415e-8ba1-80475177a73a"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "name": "upc",
+              "value": "={{ $json.upc }}",
+              "type": "string"
+            },
+            {
+              "name": "title",
+              "value": "={{ $json.title }}",
+              "type": "string"
+            },
+            {
+              "name": "price_excl_tax",
+              "value": "={{ Number(String($json.price ?? '').replace(/[^0-9.]/g, '')) }}",
+              "type": "number"
+            },
+            {
+              "name": "availability",
+              "value": "={{ $json.availability }}",
+              "type": "string"
+            },
+            {
+              "name": "category",
+              "value": "={{ $json.category }}",
+              "type": "string"
+            },
+            {
+              "name": "description",
+              "value": "={{ $json.description }}",
+              "type": "string"
+            },
+            {
+              "name": "source",
+              "value": "books",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        8368,
+        11376
+      ],
+      "name": "Set book typed",
+      "id": "a153a2b9-3dca-4d53-9988-465b6400c22d"
+    },
+    {
+      "parameters": {
+        "compare": "selectedFields",
+        "fieldsToCompare": "upc",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.removeDuplicates",
+      "typeVersion": 2,
+      "position": [
+        8144,
+        11136
+      ],
+      "name": "Remove Duplicates books",
+      "id": "4cb1c84b-6aae-422a-9f5e-bf062e7232ec"
+    },
+    {
+      "parameters": {
+        "options": {
+          "fileName": "nocode_books.csv",
+          "headerRow": true
+        }
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        8368,
+        11136
+      ],
+      "name": "Convert books to CSV",
+      "id": "6f826f43-578f-426f-9e97-27a48c5ac5d5"
+    },
+    {
+      "parameters": {
+        "operation": "write",
+        "fileName": "/files/nocode_result_books.csv",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        8592,
+        11136
+      ],
+      "name": "Write books CSV",
+      "id": "0b244b4c-9dbb-4124-9c2f-06aac6d53b0a"
+    },
+    {
+      "parameters": {
+        "url": "https://quotes.toscrape.com/",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        6832,
+        11664
+      ],
+      "name": "HTTP Request (quotes main)",
+      "id": "e2d49fed-f3ef-4d14-86e8-cc45f83b35b5",
+      "retryOnFail": true
+    },
+    {
+      "parameters": {
+        "operation": "extractHtmlContent",
+        "extractionValues": {
+          "values": [
+            {
+              "key": "tag_links",
+              "cssSelector": "div.tags-box span.tag-item a.tag",
+              "returnValue": "attribute",
+              "attribute": "href",
+              "returnArray": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.html",
+      "typeVersion": 1.2,
+      "position": [
+        7056,
+        11664
+      ],
+      "name": "HTML tags",
+      "id": "e864845e-650b-48f5-9aa1-546a358bc996"
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "tag_links",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        7264,
+        11664
+      ],
+      "name": "Split Out tags",
+      "id": "08868ac0-d9da-402c-8e97-b013b4584bd8"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "name": "tag_url",
+              "value": "=https://quotes.toscrape.com{{ $json.tag_links }}",
+              "type": "string"
+            },
+            {
+              "name": "source_tag",
+              "value": "={{ $json.tag_links.split('/')[2] }}",
+              "type": "string"
+            },
+            {
+              "name": "page_url",
+              "value": "=https://quotes.toscrape.com{{ $json.tag_links }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        7488,
+        11664
+      ],
+      "name": "Set tag_url",
+      "id": "5c4a389c-1586-4561-a6de-bebea7bee0f9"
+    },
+    {
+      "parameters": {
+        "url": "={{ $json.tag_url }}",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "text"
+            }
+          },
+          "pagination": {
+            "pagination": {
+              "paginationMode": "responseContainsNextURL",
+              "nextURL": "={{ (() => {\n  const body = String($response.body ?? '');\n  const match = body.match(/<li\\s+class=[\"']next[\"'][^>]*>\\s*<a\\s+href=[\"']([^\"']+)[\"']/i);\n  if (match && match[1]) {\n    return 'https://quotes.toscrape.com' + match[1];\n  }\n  return 'https://quotes.toscrape.com';\n})() }}",
+              "paginationCompleteWhen": "other",
+              "completeExpression": "={{ !/<li\\s+class=[\"']next[\"'][^>]*>\\s*<a\\s+href=[\"'][^\"']+[\"']/i.test(String($response.body ?? '')) }}",
+              "limitPagesFetched": true,
+              "requestInterval": 50
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        7712,
+        11776
+      ],
+      "id": "813beea2-456d-4187-a18c-5e07d46236db",
+      "name": "HTTP Request (tag pages with pagination)",
+      "retryOnFail": true
+    },
+    {
+      "parameters": {
+        "operation": "extractHtmlContent",
+        "extractionValues": {
+          "values": [
+            {
+              "key": "quotes_html",
+              "cssSelector": "div.quote",
+              "returnValue": "html",
+              "returnArray": true
+            }
+          ]
+        },
+        "options": {
+          "trimValues": false,
+          "cleanUpText": false
+        }
+      },
+      "type": "n8n-nodes-base.html",
+      "typeVersion": 1.2,
+      "position": [
+        7936,
+        11776
+      ],
+      "id": "4920db11-0f45-4d46-952c-05f713017c1e",
+      "name": "HTML quotes on each page"
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "quotes_html",
+        "options": {
+          "disableDotNotation": false
+        }
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        8144,
+        11776
+      ],
+      "id": "a57e8adb-0927-4d4e-986c-bcc3dcb1f0f8",
+      "name": "Split Out quotes"
+    },
+    {
+      "parameters": {
+        "operation": "extractHtmlContent",
+        "dataPropertyName": "quotes_html",
+        "extractionValues": {
+          "values": [
+            {
+              "key": "quote",
+              "cssSelector": "span.text"
+            },
+            {
+              "key": "author",
+              "cssSelector": "small.author"
+            },
+            {
+              "key": "author_href",
+              "cssSelector": "span small.author + a",
+              "returnValue": "attribute",
+              "attribute": "href"
+            },
+            {
+              "key": "tags",
+              "cssSelector": "div.tags a.tag",
+              "returnArray": true
+            }
+          ]
+        },
+        "options": {
+          "trimValues": false,
+          "cleanUpText": false
+        }
+      },
+      "type": "n8n-nodes-base.html",
+      "typeVersion": 1.2,
+      "position": [
+        8368,
+        11776
+      ],
+      "id": "47475a2d-6f2f-4dd8-9e26-127e559fcc06",
+      "name": "HTML quote fields"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "name": "quote",
+              "value": "={{ $json.quote }}",
+              "type": "string"
+            },
+            {
+              "name": "author",
+              "value": "={{ $json.author }}",
+              "type": "string"
+            },
+            {
+              "name": "author_url",
+              "value": "={{ $json.author_href ? 'https://quotes.toscrape.com' + $json.author_href : '' }}",
+              "type": "string"
+            },
+            {
+              "name": "tags",
+              "value": "={{ $json.tags }}",
+              "type": "array"
+            },
+            {
+              "name": "source_tag",
+              "value": "={{ $('Set tag_url').item.json.source_tag }}",
+              "type": "string"
+            },
+            {
+              "name": "business_key",
+              "value": "={{ $json.author.toLowerCase() + '|' + $json.quote.toLowerCase() + '|' + $('Set tag_url').item.json.source_tag }}",
+              "type": "string"
+            },
+            {
+              "name": "source",
+              "value": "quotes",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        8816,
+        11776
+      ],
+      "name": "Set quote typed",
+      "id": "890f1590-bb19-4800-b11f-3671abbce8cd"
+    },
+    {
+      "parameters": {
+        "compare": "selectedFields",
+        "fieldsToCompare": "author_url",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.removeDuplicates",
+      "typeVersion": 2,
+      "position": [
+        9024,
+        11776
+      ],
+      "name": "Dedupe authors",
+      "id": "5e213cff-df09-4d5d-819c-af6ca0ae717d",
+      "notes": "Один запрос на уникального автора вместо запроса на каждую цитату"
+    },
+    {
+      "parameters": {
+        "url": "={{ $json.author_url }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        9248,
+        11776
+      ],
+      "name": "HTTP Request (author profile)",
+      "id": "bd7ed15b-ef83-4544-b9e1-41312388d8ab",
+      "retryOnFail": true
+    },
+    {
+      "parameters": {
+        "operation": "extractHtmlContent",
+        "extractionValues": {
+          "values": [
+            {
+              "key": "bornDate",
+              "cssSelector": "span.author-born-date"
+            },
+            {
+              "key": "bornPlace",
+              "cssSelector": "span.author-born-location"
+            },
+            {
+              "key": "authorBio",
+              "cssSelector": "div.author-description"
+            }
+          ]
+        },
+        "options": {
+          "trimValues": true,
+          "cleanUpText": true
+        }
+      },
+      "type": "n8n-nodes-base.html",
+      "typeVersion": 1.2,
+      "position": [
+        9472,
+        11776
+      ],
+      "name": "HTML author profile",
+      "id": "7c1da74c-3e71-4688-b295-5a3bd5790d04"
+    },
+    {
+      "parameters": {
+        "jsCode": "const authorUrl = $json.author_url || '';\n\n// Ищем одну цитату-«представителя» этого автора из Set quote typed, чтобы восстановить контекст\nconst all = $('Set quote typed').all();\nconst match = all.find(i => i.json.author_url === authorUrl) || all[0];\n\nif (!match) {\n  return [];\n}\n\nconst q = match.json;\n\nreturn [{\n  json: {\n    author_url: authorUrl,\n    author: q.author,\n    business_key: q.business_key,\n    quote: q.quote,\n    tags: q.tags,\n    source_tag: q.source_tag,\n    source: q.source,\n    author_born_date: $json.bornDate ?? '',\n    author_born_place: $json.bornPlace ?? '',\n    author_bio: $json.authorBio ?? ''\n  }\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        9696,
+        11776
+      ],
+      "name": "Restore quote context",
+      "id": "1bf22b47-bdc5-4d54-a38d-752b8ba31313",
+      "notes": "После дедупа по author_url восстанавливаем контекст цитаты для Merge/дедупа ниже"
+    },
+    {
+      "parameters": {
+        "compare": "selectedFields",
+        "fieldsToCompare": "business_key",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.removeDuplicates",
+      "typeVersion": 2,
+      "position": [
+        8144,
+        11536
+      ],
+      "name": "Remove Duplicates quotes",
+      "id": "11b59510-79d0-4281-8b9a-545926e25123"
+    },
+    {
+      "parameters": {
+        "options": {
+          "fileName": "nocode_quotes.csv",
+          "headerRow": true
+        }
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        8368,
+        11536
+      ],
+      "name": "Convert quotes to CSV",
+      "id": "64725f0a-8d1e-48ad-a5cf-9897d7c52511"
+    },
+    {
+      "parameters": {
+        "operation": "write",
+        "fileName": "/files/nocode_result_quotes.csv",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        8592,
+        11536
+      ],
+      "name": "Write quotes CSV",
+      "id": "cf61a0cb-41c3-484b-9a99-ae10b413551c"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Clear Memory",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Clear Memory": {
+      "main": [
+        [
+          {
+            "node": "Split Flow",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Flow": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request (books catalog)",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "HTTP Request (quotes main)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request (books catalog)": {
+      "main": [
+        [
+          {
+            "node": "HTML books catalog",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTML books catalog": {
+      "main": [
+        [
+          {
+            "node": "Split Out cards",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out cards": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields card_url",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields card_url": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request (book card)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request (book card)": {
+      "main": [
+        [
+          {
+            "node": "HTML book fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTML book fields": {
+      "main": [
+        [
+          {
+            "node": "Set book typed",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set book typed": {
+      "main": [
+        [
+          {
+            "node": "Remove Duplicates books",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Remove Duplicates books": {
+      "main": [
+        [
+          {
+            "node": "Convert books to CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert books to CSV": {
+      "main": [
+        [
+          {
+            "node": "Write books CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request (quotes main)": {
+      "main": [
+        [
+          {
+            "node": "HTML tags",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTML tags": {
+      "main": [
+        [
+          {
+            "node": "Split Out tags",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out tags": {
+      "main": [
+        [
+          {
+            "node": "Set tag_url",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set tag_url": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request (tag pages with pagination)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request (tag pages with pagination)": {
+      "main": [
+        [
+          {
+            "node": "HTML quotes on each page",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTML quotes on each page": {
+      "main": [
+        [
+          {
+            "node": "Split Out quotes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out quotes": {
+      "main": [
+        [
+          {
+            "node": "HTML quote fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTML quote fields": {
+      "main": [
+        [
+          {
+            "node": "Set quote typed",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set quote typed": {
+      "main": [
+        [
+          {
+            "node": "Dedupe authors",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Dedupe authors": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request (author profile)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request (author profile)": {
+      "main": [
+        [
+          {
+            "node": "HTML author profile",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTML author profile": {
+      "main": [
+        [
+          {
+            "node": "Restore quote context",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Restore quote context": {
+      "main": [
+        [
+          {
+            "node": "Remove Duplicates quotes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Remove Duplicates quotes": {
+      "main": [
+        [
+          {
+            "node": "Convert quotes to CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert quotes to CSV": {
+      "main": [
+        [
+          {
+            "node": "Write quotes CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "0604bfc1-9188-4a4c-b445-858ddca10cee",
+  "meta": {
+    "instanceId": "ee0e625b875fd703de895f0495ade7c1379ebf5bd8ada0f61be167b03fd6f97a"
+  },
+  "nodeGroups": [],
+  "id": "ToyReitWBW53kJjR",
+  "tags": []
+}
