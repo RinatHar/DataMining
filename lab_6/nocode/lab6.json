@@ -1,0 +1,371 @@
+{
+  "name": "lab6",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 3 * * *"
+            }
+          ]
+        }
+      },
+      "id": "8208169d-fbb5-4fc1-9819-75165e4e0c45",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -240,
+        160
+      ]
+    },
+    {
+      "parameters": {
+        "fileSelector": "/files/raw/weather.jsonl",
+        "options": {}
+      },
+      "id": "9448d156-c7ca-4f75-a973-83a8e080d7e3",
+      "name": "Read Weather",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "fileSelector": "/files/raw/books.jsonl",
+        "options": {}
+      },
+      "id": "9861fea4-a3ea-441a-b3dd-16186fbfbda8",
+      "name": "Read Books",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1,
+      "position": [
+        0,
+        304
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "text",
+        "options": {}
+      },
+      "id": "08137a52-dbfd-4e51-baf0-e20efa4c8718",
+      "name": "Text Weather",
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1,
+      "position": [
+        240,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "text",
+        "options": {}
+      },
+      "id": "677977f3-15ac-4ff4-8ea8-5c4bff5a8d4a",
+      "name": "Text Books",
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1,
+      "position": [
+        240,
+        304
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const text = items[0].json.data || '';\nconst out = [];\nfor (const line of text.split(/\\r?\\n/)) {\n  const t = line.trim();\n  if (!t) continue;\n  try {\n    const r = JSON.parse(t);\n    r._kind = 'weather';\n    out.push({ json: r });\n  } catch (e) {}\n}\nreturn out;"
+      },
+      "id": "1999b715-3aa2-4f5e-b635-206e6fe3b002",
+      "name": "Parse Weather JSONL",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        480,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const text = items[0].json.data || '';\nconst out = [];\nfor (const line of text.split(/\\r?\\n/)) {\n  const t = line.trim();\n  if (!t) continue;\n  try {\n    const r = JSON.parse(t);\n    r._kind = 'book';\n    out.push({ json: r });\n  } catch (e) {}\n}\nreturn out;"
+      },
+      "id": "fbedecba-f5d4-4c70-90d0-c15d7e63459a",
+      "name": "Parse Books JSONL",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        480,
+        304
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "787d5058-391f-4bac-a0c6-eb90e2cb54fd",
+      "name": "Merge",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3,
+      "position": [
+        720,
+        160
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const out = [];\nfor (const item of items){\n  const r = item.json;\n  const isWeather = r._kind === 'weather';\n  \n  // 1. Формируем бизнес-ключ\n  let business_key = '';\n  if (isWeather) {\n      business_key = `weather_${r.date_raw}`;\n  } else {\n      // Безопасная очистка названия от спецсимволов\n      business_key = String(r.title_raw || '').toLowerCase().replace(/[^a-z0-9]/g, '_');\n  }\n\n  // 2. Извлекаем метрику (цену или температуру)\n  let metric = null;\n  if (isWeather) {\n      // Для погоды температура лежит в price_raw (согласно Ячейке 2 Python)\n      metric = parseFloat(r.price_raw);\n  } else {\n      // Для книг очищаем строку от Â£, оставляя только цифры и точку\n      const cleanPrice = String(r.price_raw || '').replace(/[^\\d.]/g, '');\n      metric = parseFloat(cleanPrice);\n  }\n  \n  // 3. Валидация\n  const errs = [];\n  if (!business_key || business_key.length < 3) {\n      errs.push('missing or short key');\n  }\n  if (isNaN(metric) || metric === null) {\n      errs.push('invalid metric');\n  }\n  \n  // 4. Формируем результат\n  out.push({ json: {\n    business_key: business_key,\n    source: r._source,\n    title: r.title_raw,\n    metric_numeric: metric,\n    collected_at: r._collected_at,\n    _valid: errs.length === 0,\n    _reason: errs.join('; ')\n  }});\n}\nreturn out;"
+      },
+      "id": "6d522dd4-d29b-4b39-85e4-1018b77f0470",
+      "name": "Normalize",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        960,
+        160
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "removeDuplicateItems"
+      },
+      "id": "9b3391da-f7fb-463d-a140-470d1e4bb682",
+      "name": "Dedup",
+      "type": "n8n-nodes-base.removeDuplicates",
+      "typeVersion": 2,
+      "position": [
+        1200,
+        160
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "c1",
+              "leftValue": "={{ $json._valid }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "8f58cf5a-b534-4fe4-ace3-771551e53b07",
+      "name": "IF Valid",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1440,
+        160
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "INSERT INTO unified_facts (business_key, source, title, metric_numeric, collected_at, updated_at)\nVALUES (\n  $$ {{ $json.business_key }} $$, \n  $$ {{ $json.source }} $$, \n  $$ {{ $json.title }} $$, \n  {{ $json.metric_numeric }}, \n  $$ {{ $json.collected_at }} $$::timestamptz, \n  NOW()\n)\nON CONFLICT (business_key) DO UPDATE SET\n  metric_numeric = EXCLUDED.metric_numeric,\n  updated_at = NOW()\nWHERE unified_facts.metric_numeric IS DISTINCT FROM EXCLUDED.metric_numeric;",
+        "options": {}
+      },
+      "id": "02ef3a70-cf3d-4868-a4c4-78d6cc49db34",
+      "name": "Upsert Facts",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [
+        1680,
+        0
+      ],
+      "credentials": {
+        "postgres": {
+          "id": "IGiTbCMxvdOeesbj",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "INSERT INTO rejects (payload, reason, created_at)\nVALUES ($1::jsonb, $2, NOW())",
+        "options": {
+          "queryReplacement": "=$1={{ JSON.stringify($json) }}\n$2={{ $json._reason || 'Unknown error' }}"
+        }
+      },
+      "id": "5f57245e-9670-4b3b-9f17-3fffed3dc6be",
+      "name": "Insert Rejects",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [
+        1680,
+        304
+      ],
+      "credentials": {
+        "postgres": {
+          "id": "IGiTbCMxvdOeesbj",
+          "name": "Postgres account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Read Weather",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Read Books",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read Weather": {
+      "main": [
+        [
+          {
+            "node": "Text Weather",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Text Weather": {
+      "main": [
+        [
+          {
+            "node": "Parse Weather JSONL",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read Books": {
+      "main": [
+        [
+          {
+            "node": "Text Books",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Text Books": {
+      "main": [
+        [
+          {
+            "node": "Parse Books JSONL",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Weather JSONL": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Books JSONL": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Normalize",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normalize": {
+      "main": [
+        [
+          {
+            "node": "Dedup",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Dedup": {
+      "main": [
+        [
+          {
+            "node": "IF Valid",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF Valid": {
+      "main": [
+        [
+          {
+            "node": "Upsert Facts",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Insert Rejects",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "882885e5-c1f0-458a-a357-7628ba670547",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "e22c4beeb95c97b4be4a542fc0ca485e1f37546704cacb87130cfa0924948a4e"
+  },
+  "nodeGroups": [],
+  "id": "pdA7HzSXkoEM1rON",
+  "tags": []
+}

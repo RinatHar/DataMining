@@ -1,0 +1,6 @@
+pandas==2.2.2
+pyarrow==16.1.0
+requests==2.32.3
+beautifulsoup4==4.12.3
+pydantic==2.7.4
+lxml==5.2.2

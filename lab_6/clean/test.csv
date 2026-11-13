@@ -1,0 +1,62 @@
+_source,_source_url,_collected_at,_parser_version,title_raw,price_raw,date_raw
+books.toscrape.com,https://books.toscrape.com/catalogue/page-1.html,2026-11-13T15:19:25.569122+00:00,1.0,A Light in the Attic,Â£51.77,
+books.toscrape.com,https://books.toscrape.com/catalogue/page-1.html,2026-11-13T15:19:25.569122+00:00,1.0,Tipping the Velvet,Â£53.74,
+books.toscrape.com,https://books.toscrape.com/catalogue/page-1.html,2026-11-13T15:19:25.570119+00:00,1.0,Soumission,Â£50.10,
+books.toscrape.com,https://books.toscrape.com/catalogue/page-1.html,2026-11-13T15:19:25.570119+00:00,1.0,Sharp Objects,Â£47.82,
+books.toscrape.com,https://books.toscrape.com/catalogue/page-1.html,2026-11-13T15:19:25.570119+00:00,1.0,Sapiens: A Brief History of Humankind,Â£54.23,
+books.toscrape.com,https://books.toscrape.com/catalogue/page-1.html,2026-11-13T15:19:25.570119+00:00,1.0,The Requiem Red,Â£22.65,
+books.toscrape.com,https://books.toscrape.com/catalogue/page-1.html,2026-11-13T15:19:25.570119+00:00,1.0,The Dirty Little Secrets of Getting Your Dream Job,Â£33.34,
+books.toscrape.com,https://books.toscrape.com/catalogue/page-1.html,2026-11-13T15:19:25.570119+00:00,1.0,"The Coming Woman: A Novel Based on the Life of the Infamous Feminist, Victoria Woodhull",Â£17.93,
+books.toscrape.com,https://books.toscrape.com/catalogue/page-1.html,2026-11-13T15:19:25.570119+00:00,1.0,The Boys in the Boat: Nine Americans and Their Epic Quest for Gold at the 1936 Berlin Olympics,Â£22.60,
+books.toscrape.com,https://books.toscrape.com/catalogue/page-1.html,2026-11-13T15:19:25.570119+00:00,1.0,The Black Maria,Â£52.15,
+books.toscrape.com,https://books.toscrape.com/catalogue/page-1.html,2026-11-13T15:19:25.570119+00:00,1.0,"Starving Hearts (Triangular Trade Trilogy, #1)",Â£13.99,
+books.toscrape.com,https://books.toscrape.com/catalogue/page-1.html,2026-11-13T15:19:25.571119+00:00,1.0,Shakespeare's Sonnets,Â£20.66,
+books.toscrape.com,https://books.toscrape.com/catalogue/page-1.html,2026-11-13T15:19:25.571119+00:00,1.0,Set Me Free,Â£17.46,
+books.toscrape.com,https://books.toscrape.com/catalogue/page-1.html,2026-11-13T15:19:25.571119+00:00,1.0,Scott Pilgrim's Precious Little Life (Scott Pilgrim #1),Â£52.29,
+books.toscrape.com,https://books.toscrape.com/catalogue/page-1.html,2026-11-13T15:19:25.571119+00:00,1.0,Rip it Up and Start Again,Â£35.02,
+books.toscrape.com,https://books.toscrape.com/catalogue/page-1.html,2026-11-13T15:19:25.571119+00:00,1.0,"Our Band Could Be Your Life: Scenes from the American Indie Underground, 1981-1991",Â£57.25,
+books.toscrape.com,https://books.toscrape.com/catalogue/page-1.html,2026-11-13T15:19:25.571119+00:00,1.0,Olio,Â£23.88,
+books.toscrape.com,https://books.toscrape.com/catalogue/page-1.html,2026-11-13T15:19:25.571119+00:00,1.0,Mesaerion: The Best Science Fiction Stories 1800-1849,Â£37.59,
+books.toscrape.com,https://books.toscrape.com/catalogue/page-1.html,2026-11-13T15:19:25.571119+00:00,1.0,Libertarianism for Beginners,Â£51.33,
+books.toscrape.com,https://books.toscrape.com/catalogue/page-1.html,2026-11-13T15:19:25.571119+00:00,1.0,It's Only the Himalayas,Â£45.17,
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-12.8,2024-01-01
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-20.9,2024-01-02
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-25.2,2024-01-03
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-24.7,2024-01-04
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-20.2,2024-01-05
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-15.9,2024-01-06
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-22.9,2024-01-07
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-8.8,2024-01-08
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-1.1,2024-01-09
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-1.1,2024-01-10
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,0.4,2024-01-11
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-11.5,2024-01-12
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-22.9,2024-01-13
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-4.8,2024-01-14
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-1.6,2024-01-15
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-2.3,2024-01-16
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-6.4,2024-01-17
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,0.7,2024-01-18
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,0.3,2024-01-19
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-4.8,2024-01-20
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-10.6,2024-01-21
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-8.1,2024-01-22
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-1.9,2024-01-23
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,0.3,2024-01-24
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-0.3,2024-01-25
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-2.8,2024-01-26
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-4.8,2024-01-27
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-3.7,2024-01-28
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-0.5,2024-01-29
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,1.0,2024-01-30
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-0.9,2024-01-31
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,1.4,2024-02-01
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-0.8,2024-02-02
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-1.8,2024-02-03
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,1.0,2024-02-04
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-2.8,2024-02-05
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-3.3,2024-02-06
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-6.2,2024-02-07
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-12.5,2024-02-08
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-10.4,2024-02-09
+open_meteo,https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.62&start_date=2024-01-01&end_date=2024-02-10&daily=temperature_2m_max&timezone=UTC,2026-11-13T15:19:25.852189+00:00,1.0,Moscow,-17.0,2024-02-10
